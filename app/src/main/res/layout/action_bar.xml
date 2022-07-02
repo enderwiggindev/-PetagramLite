@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/action_bar"
+    android:background="?attr/colorPrimary"
+    android:elevation="@dimen/toolbar_elevation"
+    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_gravity="left"
+            android:id="@+id/dog_paw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dog_paw"
+            tools:ignore="RtlHardcoded" />
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="?attr/colorOnPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <!--
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_gravity="right"
+            android:onClick="nextSecondActivity"
+            android:id="@+id/dog_fav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/start"
+            tools:ignore="RtlHardcoded,SpeakableTextPresentCheck" />
+        -->
+</androidx.appcompat.widget.Toolbar>

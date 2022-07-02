@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/cardview_corner_radius"
+    android:id="@+id/cardview_pet">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_gravity="center"
+            android:id="@+id/image_pet"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:src="@drawable/dog1"
+            tools:ignore="ImageContrastCheck" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:onClick="onClickRating"
+                android:id="@+id/image_button_pet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dog_bone"
+                tools:ignore="SpeakableTextPresentCheck" />
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_marginStart="@dimen/padding_layout"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:id="@+id/text_view_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:background="@drawable/dog_bone"
+                android:id="@+id/current_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_marginStart="@dimen/padding_layout"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:id="@+id/pet_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</com.google.android.material.card.MaterialCardView>
