@@ -8,8 +8,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import com.example.petagramlite.adapter.PetAdapterDetails;
+import com.example.petagramlite.pojo.Pet;
+
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class MainActivity2 extends AppCompatActivity {
     String [] liked_names;
@@ -27,11 +29,15 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
+
         Toolbar myToolbar = (Toolbar) findViewById(R.id.action_bar);
-        setSupportActionBar(myToolbar);
+        if (myToolbar != null)
+            setSupportActionBar(myToolbar);
+
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        /*
         Bundle params = getIntent().getExtras();
         liked_names = params.getStringArray(getResources().getString(R.string.pet_names));
         liked_ratings = params.getStringArray(getResources().getString(R.string.pet_ratings));
@@ -40,13 +46,15 @@ public class MainActivity2 extends AppCompatActivity {
         try {
             listPets =  (RecyclerView) findViewById(R.id.recycler_view_pets2);
             LinearLayoutManager llm = new LinearLayoutManager(this);
-            llm.setOrientation(LinearLayoutManager.HORIZONTAL);
+            llm.setOrientation(LinearLayoutManager.VERTICAL);
             listPets.setLayoutManager(llm);
             initPetList();
             initAdapter();
         } catch (Exception e){
             Toast.makeText(this, e.toString(), Toast.LENGTH_SHORT).show();
         }
+*/
+
     }
     public void initAdapter(){
         adapter = new PetAdapterDetails(pets, this);

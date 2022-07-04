@@ -1,4 +1,4 @@
-package com.example.petagramlite;
+package com.example.petagramlite.pojo;
 
 public class Pet {
     private String name;

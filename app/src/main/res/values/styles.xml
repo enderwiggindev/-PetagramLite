@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomPadding">
+        <item name="android:paddingBottom">@dimen/padding_layout</item>
+        <item name="android:paddingTop">@dimen/padding_layout</item>
+        <item name="android:paddingLeft">@dimen/padding_layout</item>
+        <item name="android:paddingRight">@dimen/padding_layout</item>
+    </style>
+</resources>

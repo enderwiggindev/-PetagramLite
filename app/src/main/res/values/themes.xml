@@ -5,13 +5,25 @@
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/primaryLightColor</item>
         <item name="colorPrimaryVariant">@color/primaryColor</item>
-        <item name="colorOnPrimary">@color/primaryTextColor</item>
+        <item name="colorOnPrimary">@color/secondaryLightColor</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/secondaryLightColor</item>
         <item name="colorSecondaryVariant">@color/secondaryColor</item>
-        <item name="colorOnSecondary">@color/secondaryTextColor</item>
+        <item name="colorOnSecondary">@color/primaryLightColor</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+    </style>
+    <style name="TabLayout">
+        <item name="tabSelectedTextColor">@color/secondaryLightColor</item>
+        <item name="tabTextColor">@color/primaryColor</item>
+        <item name="tabIndicatorColor">@color/secondaryLightColor</item>
+        <item name="tabBackground">@color/primaryLightColor</item>
+    </style>
+    <style name="MyToolbarStyle" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:backgroundTint">@color/primaryLightColor</item>
+        <item name="android:textColor">@color/secondaryLightColor</item>
+        <item name="iconTint">@color/secondaryLightColor</item>
+        <item name="android:tint">@color/secondaryLightColor</item>
     </style>
 </resources>

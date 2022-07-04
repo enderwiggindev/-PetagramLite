@@ -1,4 +1,4 @@
-package com.example.petagramlite;
+package com.example.petagramlite.adapter;
 
 import android.app.Activity;
 import android.view.LayoutInflater;
@@ -11,6 +11,8 @@ import androidx.appcompat.widget.AppCompatImageButton;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.petagramlite.pojo.Pet;
+import com.example.petagramlite.R;
 import com.google.android.material.textview.MaterialTextView;
 
 import java.util.ArrayList;

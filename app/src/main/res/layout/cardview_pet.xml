@@ -8,31 +8,34 @@
     app:cardCornerRadius="@dimen/cardview_corner_radius"
     android:id="@+id/cardview_pet">
     <androidx.appcompat.widget.LinearLayoutCompat
+        style="@style/CustomPadding"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_gravity="center"
             android:id="@+id/image_pet"
             android:scaleType="centerCrop"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:adjustViewBounds="true"
             android:src="@drawable/dog1"
             tools:ignore="ImageContrastCheck" />
 
         <androidx.appcompat.widget.LinearLayoutCompat
+            style="@style/CustomPadding"
+            android:layout_gravity="center"
             android:orientation="horizontal"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content">
+
             <androidx.appcompat.widget.AppCompatImageButton
-                android:onClick="onClickRating"
                 android:id="@+id/image_button_pet"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/dog_bone"
-                tools:ignore="SpeakableTextPresentCheck" />
+                android:background="@drawable/dog_bone"
+                android:onClick="onClickRating"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
             <com.google.android.material.textview.MaterialTextView
                 android:layout_marginStart="@dimen/padding_layout"
                 android:gravity="center"
@@ -40,17 +43,7 @@
                 android:id="@+id/text_view_name"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"/>
-        </androidx.appcompat.widget.LinearLayoutCompat>
 
-        <androidx.appcompat.widget.LinearLayoutCompat
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <androidx.appcompat.widget.AppCompatImageView
-                android:background="@drawable/dog_bone"
-                android:id="@+id/current_rating"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
             <com.google.android.material.textview.MaterialTextView
                 android:layout_marginStart="@dimen/padding_layout"
                 android:gravity="center"
